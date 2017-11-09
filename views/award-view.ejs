@@ -1,0 +1,25 @@
+    <h2> Award Page </h2>
+
+    <div>
+      <h3> Featured Award </h3>
+
+      <p> <%= featureAward.title %> </p>
+
+      <p> Awarded to <b><%= featureAward.recipient %></b> </p>
+    </div>
+
+    <hr>
+
+    <div>
+      <h3> All Awards </h3>
+
+      <ul>
+      <%  awardList.forEach((oneAward) => { %>
+          <li>
+            <p> <%= oneAward.title %> </p>
+
+            <p> Awarded to <b><%=oneAward.recipient %></b> </p>
+          </li>
+      <%  }) %>
+      </ul>
+    </div>
